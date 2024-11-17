@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import ProductDetails from "./ProductDetails"; // Import your ProductDetails component
+import Cart from "./Cart"; // Import your Cart component
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (product) => {
+    const exists = cart.find(
+      (item) => item.product_title === product.product_title
+    );
+
+    if (!exists) {
+      setCart((prevCart) => [...prevCart, product]);
+      toast.success("Product added to cart!");
+    } else {
+      toast.info("Product already in cart!");
+    }
+  };
+
+  const removeFromCart = (productTitle) => {
+    setCart((prevCart) =>
+      prevCart.filter((item) => item.product_title !== productTitle)
+    );
+    toast.error("Product removed successfully!");
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div>
+      <ProductDetails addToCart={addToCart} />
+      <Cart cart={cart} removeFromCart={removeFromCart} />
+      <ToastContainer />
+    </div>
+  );
+};
 
-export default App
+export default App;

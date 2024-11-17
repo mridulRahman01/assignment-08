@@ -1,0 +1,375 @@
+[
+  {
+    "product_title": "iPhone 14 Pro",
+    "product_image": "https://i.ibb.co.com/L1x496m/apple-iphone-15-pro-max.jpg",
+    "category": "Iphones",
+    "slug": "All Products",
+    "price": 999.99,
+    "description": "The latest iPhone with advanced camera system and A16 Bionic chip.",
+    "Specification": [
+      "6.1-inch display",
+      "128GB storage",
+      "Triple camera system",
+      "5G enabled"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_title": "iPhone 13",
+    "product_image": "https://i.ibb.co.com/L1x496m/apple-iphone-15-pro-max.jpg",
+    "category": "Iphones",
+    "slug": "All Products",
+    "price": 799.99,
+    "description": "Popular iPhone model with impressive camera and battery life.",
+    "Specification": [
+      "6.1-inch display",
+      "128GB storage",
+      "Dual camera system",
+      "5G enabled"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_title": "iPhone 12 Mini",
+    "product_image": "https://i.ibb.co.com/L1x496m/apple-iphone-15-pro-max.jpg",
+    "category": "Iphones",
+
+    "price": 599.99,
+    "description": "Compact iPhone model with all the essential features.",
+    "Specification": [
+      "5.4-inch display",
+      "64GB storage",
+      "Dual camera system",
+      "5G enabled"
+    ],
+    "availability": false,
+    "rating": 4.5
+  },
+  {
+    "product_title": "iPhone SE",
+    "product_image": "https://i.ibb.co.com/L1x496m/apple-iphone-15-pro-max.jpg",
+    "category": "Iphones",
+    "price": 399.99,
+    "description": "Affordable iPhone with powerful performance in a compact design.",
+    "Specification": [
+      "4.7-inch display",
+      "64GB storage",
+      "Single camera",
+      "4G enabled"
+    ],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "product_title": "Apple Watch Series 8",
+    "product_image": "https://i.ibb.co.com/f87B1XV/Alpine-Loop-Blue-3303.png",
+    "category": "Smartwatch",
+    "slug": "All Products",
+    "price": 399.99,
+    "description": "Advanced health and fitness features with a durable design.",
+    "Specification": [
+      "Always-On Retina display",
+      "Blood Oxygen sensor",
+      "Water-resistant",
+      "Heart rate monitoring"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_title": "Apple Watch SE",
+    "product_image": "https://i.ibb.co.com/f87B1XV/Alpine-Loop-Blue-3303.png",
+    "category": "Smartwatch",
+    "slug": "All Products",
+    "price": 279.99,
+    "description": "Budget-friendly Apple Watch with essential features.",
+    "Specification": [
+      "Retina display",
+      "GPS tracking",
+      "Water-resistant",
+      "Heart rate monitoring"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_title": "Samsung Galaxy Watch 5",
+    "product_image": "https://i.ibb.co.com/f87B1XV/Alpine-Loop-Blue-3303.png",
+    "category": "Smartwatch",
+    "price": 299.99,
+    "description": "Stylish smartwatch with advanced fitness and health features.",
+    "Specification": [
+      "AMOLED display",
+      "Blood Oxygen monitoring",
+      "GPS tracking",
+      "Water-resistant"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_title": "Fitbit Versa 4",
+    "product_image": "https://i.ibb.co.com/f87B1XV/Alpine-Loop-Blue-3303.png",
+    "category": "Smartwatch",
+    "price": 229.99,
+    "description": "Health-focused smartwatch with all-day activity tracking.",
+    "Specification": [
+      "AMOLED display",
+      "Heart rate monitor",
+      "Sleep tracking",
+      "Water-resistant"
+    ],
+    "availability": false,
+    "rating": 4.3
+  },
+  {
+    "product_title": "MacBook Pro 16-inch",
+    "product_image": "https://i.ibb.co.com/qr8LpPH/Mac-Book-Air-M3-13-Inch-Space-Gray-5947.jpg",
+    "category": "MacBook",
+    "slug": "All Products",
+    "price": 2399.99,
+    "description": "Powerful performance with M1 Max chip and Liquid Retina XDR display.",
+    "Specification": [
+      "16-inch Liquid Retina XDR display",
+      "M1 Max chip",
+      "32GB RAM",
+      "1TB SSD"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_title": "MacBook Air M1",
+    "product_image": "https://i.ibb.co.com/qr8LpPH/Mac-Book-Air-M3-13-Inch-Space-Gray-5947.jpg",
+    "category": "MacBook",
+    "slug": "All Products",
+    "price": 999.99,
+    "description": "Lightweight and portable with impressive battery life.",
+    "Specification": [
+      "13.3-inch Retina display",
+      "M1 chip",
+      "8GB RAM",
+      "256GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_title": "MacBook Pro 14-inch",
+    "product_image": "https://i.ibb.co.com/qr8LpPH/Mac-Book-Air-M3-13-Inch-Space-Gray-5947.jpg",
+    "category": "MacBook",
+    "price": 1999.99,
+    "description": "Performance-focused laptop with stunning display.",
+    "Specification": [
+      "14-inch Liquid Retina XDR display",
+      "M1 Pro chip",
+      "16GB RAM",
+      "512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_title": "MacBook Air M2",
+    "product_image": "https://i.ibb.co.com/qr8LpPH/Mac-Book-Air-M3-13-Inch-Space-Gray-5947.jpg",
+    "category": "MacBook",
+    "price": 1299.99,
+    "description": "Latest MacBook Air with new M2 chip for enhanced performance.",
+    "Specification": [
+      "13.6-inch Retina display",
+      "M2 chip",
+      "8GB RAM",
+      "256GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_title": "Samsung Galaxy S22",
+    "product_image": "https://i.ibb.co.com/QQ2wzjk/01-E1-Online-Exclusive-Sapphire-Blue-Lockup-1600x1200.webp",
+    "category": "Phones",
+    "slug": "All Products",
+    "price": 799.99,
+    "description": "Premium Android phone with a powerful camera and stunning display.",
+    "Specification": [
+      "6.1-inch Dynamic AMOLED display",
+      "Triple-lens camera",
+      "8GB RAM",
+      "5G enabled"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_title": "Google Pixel 6",
+    "product_image": "https://i.ibb.co.com/QQ2wzjk/01-E1-Online-Exclusive-Sapphire-Blue-Lockup-1600x1200.webp",
+    "category": "Phones",
+    "slug": "All Products",
+    "price": 699.99,
+    "description": "Google's flagship phone with impressive camera and AI features.",
+    "Specification": [
+      "6.4-inch OLED display",
+      "Dual-lens camera",
+      "8GB RAM",
+      "5G enabled"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_title": "OnePlus 10 Pro",
+    "product_image": "https://i.ibb.co.com/QQ2wzjk/01-E1-Online-Exclusive-Sapphire-Blue-Lockup-1600x1200.webp",
+    "category": "Phones",
+    "price": 899.99,
+    "description": "High-performance Android phone with Hasselblad camera.",
+    "Specification": [
+      "6.7-inch AMOLED display",
+      "Triple-lens camera",
+      "12GB RAM",
+      "5G enabled"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_title": "Xiaomi Mi 11",
+    "product_image": "https://i.ibb.co.com/QQ2wzjk/01-E1-Online-Exclusive-Sapphire-Blue-Lockup-1600x1200.webp",
+    "category": "Phones",
+    "price": 599.99,
+    "description": "Affordable high-end phone with impressive camera and performance.",
+    "Specification": [
+      "6.81-inch AMOLED display",
+      "108MP camera",
+      "8GB RAM",
+      "5G enabled"
+    ],
+    "availability": false,
+    "rating": 4.4
+  },
+  {
+    "product_title": "Dell XPS 13",
+    "product_image": "https://i.ibb.co.com/3pQXk34/711jg-F2-LHPL-AC-UF894-1000-QL80.jpg",
+    "category": "Laptop",
+    "slug": "All Products",
+    "price": 1099.99,
+    "description": "Ultraportable laptop with stunning display and powerful performance.",
+    "Specification": [
+      "13.4-inch InfinityEdge display",
+      "11th Gen Intel Core i7",
+      "16GB RAM",
+      "512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_title": "Lenovo IdeaPad Flex 5",
+    "product_image": "https://i.ibb.co.com/3pQXk34/711jg-F2-LHPL-AC-UF894-1000-QL80.jpg",
+    "category": "Laptop",
+    "slug": "All Products",
+    "price": 649.99,
+    "description": "2-in-1 laptop with touchscreen and AMD Ryzen processor.",
+    "Specification": [
+      "14-inch FHD touchscreen",
+      "AMD Ryzen 5",
+      "8GB RAM",
+      "256GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.2
+  },
+  {
+    "product_title": "HP Spectre x360",
+    "product_image": "https://i.ibb.co.com/3pQXk34/711jg-F2-LHPL-AC-UF894-1000-QL80.jpg",
+    "category": "Laptop",
+    "price": 1299.99,
+    "description": "Premium 2-in-1 laptop with sleek design and long battery life.",
+    "Specification": [
+      "13.3-inch FHD display",
+      "11th Gen Intel Core i7",
+      "16GB RAM",
+      "512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_title": "Acer Swift 3",
+    "product_image": "https://i.ibb.co.com/3pQXk34/711jg-F2-LHPL-AC-UF894-1000-QL80.jpg",
+    "category": "Laptop",
+    "price": 749.99,
+    "description": "Affordable and lightweight laptop with solid performance.",
+    "Specification": [
+      "14-inch FHD display",
+      "AMD Ryzen 7",
+      "8GB RAM",
+      "512GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_title": "Apple AirPods Pro",
+    "product_image": "https://i.ibb.co.com/YcbyNTg/images-1.jpg",
+    "category": "Accessories",
+    "slug": "All Products",
+    "price": 249.99,
+    "description": "Noise-canceling wireless earbuds with customizable fit.",
+    "Specification": [
+      "Active Noise Cancellation",
+      "Transparency mode",
+      "Spatial audio",
+      "Wireless charging case"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_title": "Samsung Galaxy Buds Pro",
+    "product_image": "https://i.ibb.co.com/YcbyNTg/images-1.jpg",
+    "category": "Accessories",
+    "slug": "All Products",
+    "price": 199.99,
+    "description": "Premium wireless earbuds with immersive sound and ANC.",
+    "Specification": [
+      "Active Noise Cancellation",
+      "IPX7 water-resistant",
+      "Ambient sound mode",
+      "Wireless charging"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_title": "Anker PowerCore 20000",
+    "product_image": "https://i.ibb.co.com/YcbyNTg/images-1.jpg",
+    "category": "Accessories",
+    "price": 59.99,
+    "description": "High-capacity portable charger with fast charging support.",
+    "Specification": [
+      "20,000mAh capacity",
+      "PowerIQ and VoltageBoost",
+      "Dual USB ports",
+      "Fast charging"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_title": "Logitech MX Master 3",
+    "product_image": "https://i.ibb.co.com/YcbyNTg/images-1.jpg",
+    "category": "Accessories",
+    "price": 99.99,
+    "description": "High-precision wireless mouse with ergonomic design.",
+    "Specification": [
+      "7-button configuration",
+      "4000 DPI sensor",
+      "USB-C rechargeable",
+      "Customizable buttons"
+    ],
+    "availability": true,
+    "rating": 4.9
+  }
+]
