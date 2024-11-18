@@ -41,7 +41,7 @@ const Cart = () => {
   return (
     <div className="relative">
       <div className="flex justify-between p-5">
-        <h2>Cart</h2>
+        <h2 className="font-bold">Cart</h2>
         <div className="flex gap-2 items-center">
           <h1 className="font-bold">Total Cost: ${totalCost.toFixed(2)}</h1>
           <div>
@@ -59,7 +59,9 @@ const Cart = () => {
       </div>
 
       {sortedCart.length === 0 ? (
-        <p>Your cart is empty.</p>
+        <h1 className="flex justify-center font-bold text-3xl">
+          Your cart is empty.
+        </h1>
       ) : (
         <div className="mb-4 flex flex-wrap gap-8 justify-center">
           {sortedCart.map((item) => (

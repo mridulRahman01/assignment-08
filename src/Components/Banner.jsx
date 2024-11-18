@@ -5,8 +5,10 @@ const Banner = ({ title, subtitle, children }) => {
       <div className="hero  w-[1500px] h-[690px]">
         <div className="hero-content text-center">
           <div className="max-w-md">
-            <h1 className="text-4xl font-bold">{title}</h1>
-            <p className="py-6">{subtitle}</p>
+            <h1 className="text-4xl font-bold w-[700px] ml-[-120px]">
+              {title}
+            </h1>
+            <p className="p-5 w-[790px] h-[56px] ml-[-170px]">{subtitle}</p>
             {children && <div style={{ marginTop: "20px" }}>{children}</div>}
           </div>
         </div>

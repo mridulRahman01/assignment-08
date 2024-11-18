@@ -12,61 +12,66 @@ const Wishlist = () => {
 
   const handleAddToCart = (id) => {
     moveToCartFromWishlist(id);
-    setWishlist(getAllWishlist()); // Update the wishlist after moving to cart
+    setWishlist(getAllWishlist());
   };
 
   const handleRemoveFromWishlist = (id) => {
-    setRemovingProductId(id); // Set the ID of the product being removed
+    setRemovingProductId(id);
     setTimeout(() => {
       removeFromWishlist(id);
-      setWishlist(getAllWishlist()); // Update the wishlist after removal
-      setRemovingProductId(null); // Clear the removing ID
-    }, 1000); // Simulate a delay for better user feedback
+      setWishlist(getAllWishlist());
+      setRemovingProductId(null);
+    }, 1000);
     toast.success("Removing product...");
   };
 
   return (
-    <div className="mb-4 flex flex-wrap gap-8 justify-center">
-      {wishlist.length === 0 ? (
-        <p>Your wishlist is empty.</p>
-      ) : (
-        wishlist.map((item) => (
-          <div
-            key={item.id}
-            className={`w-[300px] h-[500px] ${
-              removingProductId === item.id ? "opacity-50" : ""
-            }`} // Reduce opacity for visual feedback
-          >
-            <div className="card bg-base-100 shadow-xl mb-4">
-              <figure className="px-10 pt-10">
-                <img
-                  src={item.product_image}
-                  alt={item.product_title}
-                  className="rounded-xl"
-                />
-              </figure>
-              <div className="card-body items-center text-center">
-                <h2 className="card-title">{item.product_title}</h2>
-                <p>${item.price}</p>
-                <button
-                  onClick={() => handleAddToCart(item.id)}
-                  className="btn btn-secondary"
-                >
-                  Add to Cart
-                </button>
-                <button
-                  onClick={() => handleRemoveFromWishlist(item.id)}
-                  className="btn btn-warning ml-2"
-                  disabled={removingProductId === item.id} // Disable button while removing
-                >
-                  {removingProductId === item.id ? "Removing..." : "Remove"}
-                </button>
+    <section>
+      <h1 className="font-bold mt-2">Wishlist</h1>
+      <div className="mb-4 flex flex-wrap gap-8 justify-center">
+        {wishlist.length === 0 ? (
+          <h1 className="font-bold flex justify-center text-3xl mt-6">
+            Your wishlist is empty.
+          </h1>
+        ) : (
+          wishlist.map((item) => (
+            <div
+              key={item.id}
+              className={`w-[300px] h-[500px] ${
+                removingProductId === item.id ? "opacity-50" : ""
+              }`}
+            >
+              <div className="card bg-base-100 shadow-xl mb-4">
+                <figure className="px-10 pt-10">
+                  <img
+                    src={item.product_image}
+                    alt={item.product_title}
+                    className="rounded-xl"
+                  />
+                </figure>
+                <div className="card-body items-center text-center">
+                  <h2 className="card-title">{item.product_title}</h2>
+                  <p>${item.price}</p>
+                  <button
+                    onClick={() => handleAddToCart(item.id)}
+                    className="btn btn-secondary"
+                  >
+                    Add to Cart
+                  </button>
+                  <button
+                    onClick={() => handleRemoveFromWishlist(item.id)}
+                    className="btn btn-warning ml-2"
+                    disabled={removingProductId === item.id} // Disable button while removing
+                  >
+                    {removingProductId === item.id ? "Removing..." : "Remove"}
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        ))
-      )}
-    </div>
+          ))
+        )}
+      </div>
+    </section>
   );
 };
 
