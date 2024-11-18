@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "product_title": "iPhone 14 Pro",
     "product_image": "https://i.ibb.co.com/L1x496m/apple-iphone-15-pro-max.jpg",
     "category": "Iphones",
@@ -16,6 +17,7 @@
     "rating": 4.8
   },
   {
+    "id": "2",
     "product_title": "iPhone 13",
     "product_image": "https://i.ibb.co.com/L1x496m/apple-iphone-15-pro-max.jpg",
     "category": "Iphones",
@@ -32,6 +34,7 @@
     "rating": 4.7
   },
   {
+    "id": "3",
     "product_title": "iPhone 12 Mini",
     "product_image": "https://i.ibb.co.com/L1x496m/apple-iphone-15-pro-max.jpg",
     "category": "Iphones",
@@ -48,6 +51,7 @@
     "rating": 4.5
   },
   {
+    "id": "4",
     "product_title": "iPhone SE",
     "product_image": "https://i.ibb.co.com/L1x496m/apple-iphone-15-pro-max.jpg",
     "category": "Iphones",
@@ -63,6 +67,7 @@
     "rating": 4.3
   },
   {
+    "id": "5",
     "product_title": "Apple Watch Series 8",
     "product_image": "https://i.ibb.co.com/f87B1XV/Alpine-Loop-Blue-3303.png",
     "category": "Smartwatch",
@@ -79,6 +84,7 @@
     "rating": 4.6
   },
   {
+    "id": "6",
     "product_title": "Apple Watch SE",
     "product_image": "https://i.ibb.co.com/f87B1XV/Alpine-Loop-Blue-3303.png",
     "category": "Smartwatch",
@@ -95,6 +101,7 @@
     "rating": 4.4
   },
   {
+    "id": "7",
     "product_title": "Samsung Galaxy Watch 5",
     "product_image": "https://i.ibb.co.com/f87B1XV/Alpine-Loop-Blue-3303.png",
     "category": "Smartwatch",
@@ -110,6 +117,7 @@
     "rating": 4.5
   },
   {
+    "id": "8",
     "product_title": "Fitbit Versa 4",
     "product_image": "https://i.ibb.co.com/f87B1XV/Alpine-Loop-Blue-3303.png",
     "category": "Smartwatch",
@@ -125,6 +133,7 @@
     "rating": 4.3
   },
   {
+    "id": "9",
     "product_title": "MacBook Pro 16-inch",
     "product_image": "https://i.ibb.co.com/qr8LpPH/Mac-Book-Air-M3-13-Inch-Space-Gray-5947.jpg",
     "category": "MacBook",
@@ -141,6 +150,7 @@
     "rating": 4.9
   },
   {
+    "id": "10",
     "product_title": "MacBook Air M1",
     "product_image": "https://i.ibb.co.com/qr8LpPH/Mac-Book-Air-M3-13-Inch-Space-Gray-5947.jpg",
     "category": "MacBook",
@@ -157,6 +167,7 @@
     "rating": 4.8
   },
   {
+    "id": "11",
     "product_title": "MacBook Pro 14-inch",
     "product_image": "https://i.ibb.co.com/qr8LpPH/Mac-Book-Air-M3-13-Inch-Space-Gray-5947.jpg",
     "category": "MacBook",
@@ -172,6 +183,7 @@
     "rating": 4.9
   },
   {
+    "id": "12",
     "product_title": "MacBook Air M2",
     "product_image": "https://i.ibb.co.com/qr8LpPH/Mac-Book-Air-M3-13-Inch-Space-Gray-5947.jpg",
     "category": "MacBook",
@@ -187,6 +199,7 @@
     "rating": 4.7
   },
   {
+    "id": "13",
     "product_title": "Samsung Galaxy S22",
     "product_image": "https://i.ibb.co.com/QQ2wzjk/01-E1-Online-Exclusive-Sapphire-Blue-Lockup-1600x1200.webp",
     "category": "Phones",
@@ -203,6 +216,7 @@
     "rating": 4.4
   },
   {
+    "id": "14",
     "product_title": "Google Pixel 6",
     "product_image": "https://i.ibb.co.com/QQ2wzjk/01-E1-Online-Exclusive-Sapphire-Blue-Lockup-1600x1200.webp",
     "category": "Phones",
@@ -219,6 +233,7 @@
     "rating": 4.5
   },
   {
+    "id": "15",
     "product_title": "OnePlus 10 Pro",
     "product_image": "https://i.ibb.co.com/QQ2wzjk/01-E1-Online-Exclusive-Sapphire-Blue-Lockup-1600x1200.webp",
     "category": "Phones",
@@ -234,6 +249,7 @@
     "rating": 4.6
   },
   {
+    "id": "16",
     "product_title": "Xiaomi Mi 11",
     "product_image": "https://i.ibb.co.com/QQ2wzjk/01-E1-Online-Exclusive-Sapphire-Blue-Lockup-1600x1200.webp",
     "category": "Phones",
@@ -249,6 +265,7 @@
     "rating": 4.4
   },
   {
+    "id": "17",
     "product_title": "Dell XPS 13",
     "product_image": "https://i.ibb.co.com/3pQXk34/711jg-F2-LHPL-AC-UF894-1000-QL80.jpg",
     "category": "Laptop",
@@ -265,6 +282,7 @@
     "rating": 4.5
   },
   {
+    "id": "18",
     "product_title": "Lenovo IdeaPad Flex 5",
     "product_image": "https://i.ibb.co.com/3pQXk34/711jg-F2-LHPL-AC-UF894-1000-QL80.jpg",
     "category": "Laptop",
@@ -281,6 +299,7 @@
     "rating": 4.2
   },
   {
+    "id": "19",
     "product_title": "HP Spectre x360",
     "product_image": "https://i.ibb.co.com/3pQXk34/711jg-F2-LHPL-AC-UF894-1000-QL80.jpg",
     "category": "Laptop",
@@ -296,6 +315,7 @@
     "rating": 4.6
   },
   {
+    "id": "20",
     "product_title": "Acer Swift 3",
     "product_image": "https://i.ibb.co.com/3pQXk34/711jg-F2-LHPL-AC-UF894-1000-QL80.jpg",
     "category": "Laptop",
@@ -311,6 +331,7 @@
     "rating": 4.4
   },
   {
+    "id": "21",
     "product_title": "Apple AirPods Pro",
     "product_image": "https://i.ibb.co.com/YcbyNTg/images-1.jpg",
     "category": "Accessories",
@@ -327,6 +348,7 @@
     "rating": 4.7
   },
   {
+    "id": "22",
     "product_title": "Samsung Galaxy Buds Pro",
     "product_image": "https://i.ibb.co.com/YcbyNTg/images-1.jpg",
     "category": "Accessories",
@@ -343,6 +365,7 @@
     "rating": 4.6
   },
   {
+    "id": "23",
     "product_title": "Anker PowerCore 20000",
     "product_image": "https://i.ibb.co.com/YcbyNTg/images-1.jpg",
     "category": "Accessories",
@@ -358,6 +381,7 @@
     "rating": 4.8
   },
   {
+    "id": "24",
     "product_title": "Logitech MX Master 3",
     "product_image": "https://i.ibb.co.com/YcbyNTg/images-1.jpg",
     "category": "Accessories",

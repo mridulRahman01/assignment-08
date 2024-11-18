@@ -6,6 +6,8 @@ import Statistics from "../Pages/Statistics";
 import Dashboard from "../Pages/Dashboard";
 import Cards from "../Components/Cards";
 import ProductDetails from "../Components/ProductDetails";
+import Cart from "../Components/Cart";
+import Wishlist from "../Components/Wishlist";
 
 const routes = createBrowserRouter([
   {
@@ -42,6 +44,17 @@ const routes = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
+        children: [
+          {
+            path: "cart",
+            element: <Cart></Cart>,
+            loader: () => fetch("/cat.json"),
+          },
+          {
+            path: "wishlist",
+            element: <Wishlist></Wishlist>,
+          },
+        ],
       },
     ],
   },

@@ -1,55 +1,106 @@
-import { useEffect, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import { NavLink, useNavigate } from "react-router-dom";
+import { getAllCart, clearCart, removeCart } from "./localStorage";
+import { FaSort, FaTrashAlt } from "react-icons/fa";
+import { useState, useEffect } from "react";
 
 const Cart = () => {
-  const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState([]);
+  const [sortedCart, setSortedCart] = useState(getAllCart());
+  const [totalCost, setTotalCost] = useState(0);
+  const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch("/cat.json");
-      const data = await response.json();
-      setProducts(data);
-    };
-
-    fetchData();
-  }, []);
-
-  const addToCart = (productTitle) => {
-    const product = products.find(
-      (item) => item.product_title === productTitle
-    );
-    if (!product) {
-      toast.error("Product not found!");
-      return;
-    }
-
-    if (!cart.find((item) => item.product_title === productTitle)) {
-      setCart([...cart, product]);
-      toast.success(`${productTitle} added to cart!`);
-    } else {
-      toast.info("Product already in the cart!");
+  const handleSort = (sortBy) => {
+    if (sortBy === "price") {
+      const sorted = [...sortedCart].sort((a, b) => b.price - a.price);
+      setSortedCart(sorted);
     }
   };
 
-  const removeFromCart = (index) => {
-    const updatedCart = cart.filter((_, i) => i !== index);
-    setCart(updatedCart);
-    toast.success("Product removed from cart!");
+  useEffect(() => {
+    const cost = sortedCart.reduce((acc, item) => acc + item.price, 0);
+    setTotalCost(cost);
+  }, [sortedCart]);
+
+  const handlePurchase = () => {
+    clearCart();
+    setSortedCart([]);
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+    navigate("/");
+  };
+
+  const handleRemoveItem = (id) => {
+    removeCart(id);
+    const updatedCart = sortedCart.filter((item) => item.id !== id);
+    setSortedCart(updatedCart);
   };
 
   return (
-    <div>
-      <h2>Cart</h2>
-      {cart.map((item, index) => (
-        <div key={index} className="cart-item">
-          <p>{item.product_title}</p>
-          <button onClick={() => removeFromCart(index)}>Remove</button>
+    <div className="relative">
+      <div className="flex justify-between p-5">
+        <h2>Cart</h2>
+        <div className="flex gap-2 items-center">
+          <h1 className="font-bold">Total Cost: ${totalCost.toFixed(2)}</h1>
+          <div>
+            <NavLink
+              onClick={() => handleSort("price")}
+              className="btn btn-success"
+            >
+              Sort by Price <FaSort />
+            </NavLink>
+            <button onClick={handlePurchase} className="btn btn-success ml-2">
+              Purchase Product
+            </button>
+          </div>
         </div>
-      ))}
-      <ToastContainer />
+      </div>
+
+      {sortedCart.length === 0 ? (
+        <p>Your cart is empty.</p>
+      ) : (
+        <div className="mb-4 flex flex-wrap gap-8 justify-center">
+          {sortedCart.map((item) => (
+            <div key={item.id} className="w-[300px] h-full">
+              <div className="card bg-base-100 shadow-xl mb-4">
+                <figure className="px-10 pt-10">
+                  <img
+                    src={item.product_image}
+                    alt={item.product_title}
+                    className="rounded-xl"
+                  />
+                </figure>
+                <div className="card-body items-center text-center">
+                  <h2 className="card-title">{item.product_title}</h2>
+                  <p>${item.price}</p>
+                  <button
+                    onClick={() => handleRemoveItem(item.id)}
+                    className="btn btn-warning"
+                  >
+                    Remove Item <FaTrashAlt />
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {showModal && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+            <h2 className="text-2xl font-bold mb-4">Purchase Successful!</h2>
+            <p className="mb-4">Thank you for your purchase.</p>
+            <button onClick={handleCloseModal} className="btn btn-primary mt-2">
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
-export { Cart };
+export default Cart;
