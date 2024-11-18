@@ -16,5 +16,5 @@
 <li>React Router</li>
 </ul>
 
-<h1>Live Link : </h1>
+<h1>Live Link : https://673b3bd478615615bcd51972--thunderous-cupcake-f72dfe.netlify.app/ </h1>
 <h1>Repo Link : https://github.com/mridulRahman01/assignment-08.git </h1>
